@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        form {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            max-width: 300px;
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .login {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        #loginbutton {
+            background-color: #007BFF;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #loginbutton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <form method="POST">
+        <h2>Login</h2>
+        <label for="username">Username:</label>
+        <input type="text" id="login_id" name="login_id" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        
+        <div class="login">
+        	<button type="submit" id="loginbutton" formaction="login">login</button>
+    	</div>
+
+    </form>
+
+</body>
+</html>
